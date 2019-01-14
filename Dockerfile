@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 LABEL Description="Image for building and debugging arm-embedded projects from git"
 
-WORKDIR /work
-ADD . /work
+# WORKDIR /work
+# ADD . /work
 
 RUN apt update && \
     apt upgrade -y && \
