@@ -17,5 +17,5 @@ RUN apt update && \
     tar -xjf cortex_m.tar.bz2 && \
     rm cortex_m.tar.bz2
 
-ENV PATH "/work/gcc-arm-none-eabi-7-2017-q4-major/bin:$PATH"
+ENV PATH "gcc-arm-none-eabi-7-2017-q4-major/bin:$PATH"
 
