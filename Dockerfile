@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 LABEL Description="Image for building and debugging arm-embedded projects from git"
 
-# WORKDIR /work
+WORKDIR /work
 # ADD . /work
 
 RUN apt update && \
@@ -17,5 +17,5 @@ RUN apt update && \
     tar -xjf cortex_m.tar.bz2 && \
     rm cortex_m.tar.bz2
 
-ENV PATH "gcc-arm-none-eabi-7-2017-q4-major/bin:$PATH"
+ENV PATH "/work/gcc-arm-none-eabi-7-2017-q4-major/bin:$PATH"
 
