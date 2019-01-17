@@ -15,7 +15,7 @@ RUN apt update && \
     apt install -y \
     # Development files
     build-essential \
-    # git \
+    curl \
     bzip2 \
     wget && \
     apt clean && \
